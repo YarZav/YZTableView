@@ -1,0 +1,8 @@
+workspace 'YZTableView.xcworkspace'
+project 'YZTableView.xcodeproj'
+platform :ios, :deployment_target => '11.0'
+
+target :YZTableView do
+    
+    project 'YZTableView.xcodeproj'
+end

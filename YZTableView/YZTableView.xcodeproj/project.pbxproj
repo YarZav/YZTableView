@@ -7,11 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		471F87639699294FBB38BB0B /* libPods-YZTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 756F7E507C5E19A8CABBFD37 /* libPods-YZTableView.a */; };
+		B85CD1742274BDB900670D45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85CD1732274BDB900670D45 /* AppDelegate.swift */; };
+		B85CD1762274BDB900670D45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85CD1752274BDB900670D45 /* ViewController.swift */; };
+		B85CD1792274BDB900670D45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85CD1772274BDB900670D45 /* Main.storyboard */; };
+		B85CD17B2274BDBB00670D45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85CD17A2274BDBB00670D45 /* Assets.xcassets */; };
+		B85CD17E2274BDBB00670D45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85CD17C2274BDBB00670D45 /* LaunchScreen.storyboard */; };
 		B89BF2492274B8B70034D49B /* YZTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = B89BF2472274B8B70034D49B /* YZTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B89BF2502274B9520034D49B /* YZTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89BF24F2274B9520034D49B /* YZTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2ACE86DD6C54BD1F900BF6AC /* Pods-YZTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YZTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-YZTableView/Pods-YZTableView.release.xcconfig"; sourceTree = "<group>"; };
+		756F7E507C5E19A8CABBFD37 /* libPods-YZTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YZTableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		772945D9F018886943ABC78B /* Pods-YZTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YZTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YZTableView/Pods-YZTableView.debug.xcconfig"; sourceTree = "<group>"; };
+		B85CD1712274BDB900670D45 /* YZTableViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YZTableViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B85CD1732274BDB900670D45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B85CD1752274BDB900670D45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B85CD1782274BDB900670D45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B85CD17A2274BDBB00670D45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B85CD17D2274BDBB00670D45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B85CD17F2274BDBB00670D45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B89BF2442274B8B70034D49B /* YZTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YZTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B89BF2472274B8B70034D49B /* YZTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZTableView.h; sourceTree = "<group>"; };
 		B89BF2482274B8B70034D49B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -19,21 +35,62 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B89BF2412274B8B60034D49B /* Frameworks */ = {
+		B85CD16E2274BDB900670D45 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B89BF2412274B8B60034D49B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				471F87639699294FBB38BB0B /* libPods-YZTableView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A2508221D9D0812E63BF86B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				772945D9F018886943ABC78B /* Pods-YZTableView.debug.xcconfig */,
+				2ACE86DD6C54BD1F900BF6AC /* Pods-YZTableView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6F2C9451FB03F6EC4D085DFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				756F7E507C5E19A8CABBFD37 /* libPods-YZTableView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B85CD1722274BDB900670D45 /* YZTableViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				B85CD1732274BDB900670D45 /* AppDelegate.swift */,
+				B85CD1752274BDB900670D45 /* ViewController.swift */,
+				B85CD1772274BDB900670D45 /* Main.storyboard */,
+				B85CD17A2274BDBB00670D45 /* Assets.xcassets */,
+				B85CD17C2274BDBB00670D45 /* LaunchScreen.storyboard */,
+				B85CD17F2274BDBB00670D45 /* Info.plist */,
+			);
+			path = YZTableViewExample;
+			sourceTree = "<group>";
+		};
 		B89BF23A2274B8B60034D49B = {
 			isa = PBXGroup;
 			children = (
 				B89BF2462274B8B70034D49B /* YZTableView */,
+				B85CD1722274BDB900670D45 /* YZTableViewExample */,
 				B89BF2452274B8B70034D49B /* Products */,
+				5A2508221D9D0812E63BF86B /* Pods */,
+				6F2C9451FB03F6EC4D085DFD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -41,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				B89BF2442274B8B70034D49B /* YZTableView.framework */,
+				B85CD1712274BDB900670D45 /* YZTableViewExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,10 +127,28 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		B85CD1702274BDB900670D45 /* YZTableViewExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B85CD1802274BDBB00670D45 /* Build configuration list for PBXNativeTarget "YZTableViewExample" */;
+			buildPhases = (
+				B85CD16D2274BDB900670D45 /* Sources */,
+				B85CD16E2274BDB900670D45 /* Frameworks */,
+				B85CD16F2274BDB900670D45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YZTableViewExample;
+			productName = YZTableViewExample;
+			productReference = B85CD1712274BDB900670D45 /* YZTableViewExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B89BF2432274B8B60034D49B /* YZTableView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B89BF24C2274B8B70034D49B /* Build configuration list for PBXNativeTarget "YZTableView" */;
 			buildPhases = (
+				ACEECB90511865DB47219799 /* [CP] Check Pods Manifest.lock */,
 				B89BF23F2274B8B60034D49B /* Headers */,
 				B89BF2402274B8B60034D49B /* Sources */,
 				B89BF2412274B8B60034D49B /* Frameworks */,
@@ -93,9 +169,13 @@
 		B89BF23B2274B8B60034D49B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Yaroslav Zavyalov";
 				TargetAttributes = {
+					B85CD1702274BDB900670D45 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 					B89BF2432274B8B60034D49B = {
 						CreatedOnToolsVersion = 10.2.1;
 						LastSwiftMigration = 1020;
@@ -108,6 +188,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = B89BF23A2274B8B60034D49B;
 			productRefGroup = B89BF2452274B8B70034D49B /* Products */;
@@ -115,11 +196,22 @@
 			projectRoot = "";
 			targets = (
 				B89BF2432274B8B60034D49B /* YZTableView */,
+				B85CD1702274BDB900670D45 /* YZTableViewExample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B85CD16F2274BDB900670D45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B85CD17E2274BDBB00670D45 /* LaunchScreen.storyboard in Resources */,
+				B85CD17B2274BDBB00670D45 /* Assets.xcassets in Resources */,
+				B85CD1792274BDB900670D45 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B89BF2422274B8B60034D49B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -129,7 +221,41 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		ACEECB90511865DB47219799 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YZTableView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		B85CD16D2274BDB900670D45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B85CD1762274BDB900670D45 /* ViewController.swift in Sources */,
+				B85CD1742274BDB900670D45 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B89BF2402274B8B60034D49B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -140,7 +266,64 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		B85CD1772274BDB900670D45 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B85CD1782274BDB900670D45 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B85CD17C2274BDBB00670D45 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B85CD17D2274BDBB00670D45 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		B85CD1812274BDBB00670D45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F62XB9J24B;
+				INFOPLIST_FILE = YZTableViewExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ORG.YZTableViewExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B85CD1822274BDBB00670D45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F62XB9J24B;
+				INFOPLIST_FILE = YZTableViewExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ORG.YZTableViewExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		B89BF24A2274B8B70034D49B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -265,6 +448,7 @@
 		};
 		B89BF24D2274B8B70034D49B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 772945D9F018886943ABC78B /* Pods-YZTableView.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -293,6 +477,7 @@
 		};
 		B89BF24E2274B8B70034D49B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ACE86DD6C54BD1F900BF6AC /* Pods-YZTableView.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -321,6 +506,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B85CD1802274BDBB00670D45 /* Build configuration list for PBXNativeTarget "YZTableViewExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B85CD1812274BDBB00670D45 /* Debug */,
+				B85CD1822274BDBB00670D45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B89BF23E2274B8B60034D49B /* Build configuration list for PBXProject "YZTableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
