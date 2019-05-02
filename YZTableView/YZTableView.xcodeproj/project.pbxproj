@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		471F87639699294FBB38BB0B /* libPods-YZTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 756F7E507C5E19A8CABBFD37 /* libPods-YZTableView.a */; };
 		B85CD1742274BDB900670D45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85CD1732274BDB900670D45 /* AppDelegate.swift */; };
-		B85CD1762274BDB900670D45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85CD1752274BDB900670D45 /* ViewController.swift */; };
-		B85CD1792274BDB900670D45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85CD1772274BDB900670D45 /* Main.storyboard */; };
+		B85CD1762274BDB900670D45 /* YZTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85CD1752274BDB900670D45 /* YZTestViewController.swift */; };
 		B85CD17B2274BDBB00670D45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85CD17A2274BDBB00670D45 /* Assets.xcassets */; };
 		B85CD17E2274BDBB00670D45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85CD17C2274BDBB00670D45 /* LaunchScreen.storyboard */; };
 		B89BF2492274B8B70034D49B /* YZTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = B89BF2472274B8B70034D49B /* YZTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,8 +22,7 @@
 		772945D9F018886943ABC78B /* Pods-YZTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YZTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YZTableView/Pods-YZTableView.debug.xcconfig"; sourceTree = "<group>"; };
 		B85CD1712274BDB900670D45 /* YZTableViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YZTableViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B85CD1732274BDB900670D45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B85CD1752274BDB900670D45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B85CD1782274BDB900670D45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B85CD1752274BDB900670D45 /* YZTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YZTestViewController.swift; sourceTree = "<group>"; };
 		B85CD17A2274BDBB00670D45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B85CD17D2274BDBB00670D45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B85CD17F2274BDBB00670D45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,8 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				B85CD1732274BDB900670D45 /* AppDelegate.swift */,
-				B85CD1752274BDB900670D45 /* ViewController.swift */,
-				B85CD1772274BDB900670D45 /* Main.storyboard */,
+				B85CD1752274BDB900670D45 /* YZTestViewController.swift */,
 				B85CD17A2274BDBB00670D45 /* Assets.xcassets */,
 				B85CD17C2274BDBB00670D45 /* LaunchScreen.storyboard */,
 				B85CD17F2274BDBB00670D45 /* Info.plist */,
@@ -208,7 +205,6 @@
 			files = (
 				B85CD17E2274BDBB00670D45 /* LaunchScreen.storyboard in Resources */,
 				B85CD17B2274BDBB00670D45 /* Assets.xcassets in Resources */,
-				B85CD1792274BDB900670D45 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B85CD1762274BDB900670D45 /* ViewController.swift in Sources */,
+				B85CD1762274BDB900670D45 /* YZTestViewController.swift in Sources */,
 				B85CD1742274BDB900670D45 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,14 +263,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B85CD1772274BDB900670D45 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B85CD1782274BDB900670D45 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B85CD17C2274BDBB00670D45 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
