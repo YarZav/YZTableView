@@ -32,6 +32,11 @@ extension YZTableView {
     public func startLoading() {
         if self.isLoading { return }
         self.isLoading = true
+        
+        if let loaderView = self.viewDelegate?.getLoaderView() {
+            loaderView.layoutIfNeeded()
+            self.tableFooterView = loaderView
+        }
     }
     
     public func stopLoading() {

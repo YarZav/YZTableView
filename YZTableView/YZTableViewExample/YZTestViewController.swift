@@ -13,10 +13,16 @@ import YZTableView
 class YZTestViewController: UIViewController {
     
     private var tableView = YZTableView()
+    private var models = [Int]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.createUI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.setNewModels()
     }
 }
 
@@ -31,6 +37,7 @@ extension YZTestViewController {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.viewDelegate = self
+        self.tableView.tableFooterView = UIView()
         
         self.view.addSubview(self.tableView)
         
@@ -38,6 +45,27 @@ extension YZTestViewController {
         self.tableView.translatesAutoresizingMaskIntoConstraints = false
         attributes.forEach {
             NSLayoutConstraint(item: self.tableView, attribute: $0, relatedBy: .equal, toItem: self.view, attribute: $0, multiplier: 1, constant: 0).isActive = true
+        }
+    }
+    
+    private func setNewModels() {
+        self.tableView.startLoading()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            var newIndexPaths = [IndexPath]()
+            var newModels = [Int]()
+            for i in 0..<20 {
+                newModels.append(Int.random(in: 0..<100))
+                newIndexPaths.append(IndexPath(row: (self.models.count + i), section: 0))
+            }
+            self.models.append(contentsOf: newModels)
+            
+            self.tableView.beginUpdates()
+            if self.models.isEmpty {
+                self.tableView.insertSections(IndexSet(integer: 0), with: .automatic)
+            }
+            self.tableView.insertRows(at: newIndexPaths, with: .automatic)
+            self.tableView.endUpdates()
         }
     }
 }
@@ -51,12 +79,12 @@ extension YZTestViewController: UITableViewDelegate {
 extension YZTestViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return self.models.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = self.tableView.reusableCell(indexPath: indexPath)
-        cell.textLabel?.text = "\(indexPath.section) - \(indexPath.row)"
+        cell.textLabel?.text = "\(self.models[indexPath.row])"
         return cell
     }
 }
@@ -65,11 +93,16 @@ extension YZTestViewController: UITableViewDataSource {
 extension YZTestViewController: YZTableViewProtocol {
 
     func getLoaderView() -> UIView? {
-        return nil
+        let loader = UIActivityIndicatorView()
+        loader.hidesWhenStopped = true
+        loader.startAnimating()
+
+        return loader
     }
 
     func getRefreshControl() -> UIRefreshControl? {
-        return nil
+        let refresh = UIRefreshControl()
+        return refresh
     }
 
     func getNoContentView() -> UIView? {
